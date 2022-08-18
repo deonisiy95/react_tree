@@ -1,0 +1,36 @@
+@import '~styles/colors';
+
+:local {
+  .node {
+    background-color: @grayscale-10;
+    padding: 4px 16px;
+    height: 24px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+
+    input.input {
+      width: 414px;
+      height: 24px;
+      background: unset;
+      margin-left: -12px;
+      padding-left: 5px;
+      font-size: 12px;
+      font-weight: 600 !important;
+    }
+
+    &.active > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .loader {
+      width: 17px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "target": "es5",
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "paths": {
+      "src/*": ["src/*"],
+      "styles/*": ["src/styles/*"],
+      "UI/*": ["src/core/components/*"]
+    },
+    "typeRoots": ["node_modules/@types", "./**/@types", "./src/@types"]
+  },
+  "include": ["./src", "./webpack.config.ts", "./src/@types"]
+}
